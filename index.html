@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore travel gear, compare useful accessories, and find products for your next adventure with Mark Travel Matrix.">
+  <title>Mark Travel Matrix | Travel Smarter</title>
+  <style>
+    :root {
+      --navy: #102b46;
+      --blue: #1769aa;
+      --sky: #eaf5fc;
+      --ink: #243447;
+      --muted: #617184;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      line-height: 1.6;
+      background: #fff;
+    }
+    a { color: inherit; }
+    .topbar {
+      padding: 10px 6%;
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      font-size: 13px;
+    }
+    header {
+      padding: 20px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      border-bottom: 1px solid #e5edf3;
+    }
+    .brand {
+      color: var(--navy);
+      font-size: 22px;
+      font-weight: 800;
+      text-decoration: none;
+      letter-spacing: -.5px;
+    }
+    nav { display: flex; gap: 22px; flex-wrap: wrap; }
+    nav a {
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover { color: var(--blue); }
+    .hero {
+      padding: 65px 6%;
+      background: linear-gradient(115deg, #eaf5fc, #f7fbff 65%, #d5eafa);
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 35px;
+      align-items: center;
+    }
+    .eyebrow {
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 12px 0 18px;
+      color: var(--navy);
+      font-size: clamp(38px, 5vw, 60px);
+      line-height: 1.08;
+      letter-spacing: -2px;
+    }
+    .hero p { max-width: 530px; color: var(--muted); }
+    .button {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 13px 22px;
+      border-radius: 6px;
+      background: var(--blue);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .hero-art {
+      min-height: 260px;
+      border-radius: 18px;
+      background: linear-gradient(145deg, #c4e3f7, #f8fcff);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 105px;
+    }
+    section { padding: 54px 6%; }
+    .section-head { margin-bottom: 25px; }
+    h2 { color: var(--navy); font-size: 30px; margin: 0 0 8px; }
+    .section-head p { color: var(--muted); margin: 0; }
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .category {
+      padding: 25px 20px;
+      border: 1px solid #e2eaf1;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .category:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px #102b4612;
+    }
+    .category .emoji { font-size: 38px; }
+    .category h3 { margin: 10px 0 4px; color: var(--navy); }
+    .category p { color: var(--muted); font-size: 14px; margin: 0; }
+    .featured { background: #f6f9fc; }
+    .notice {
+      padding: 18px;
+      background: white;
+      border: 1px solid #dce8f2;
+      border-radius: 8px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    .about p { color: var(--muted); }
+    footer {
+      padding: 30px 6%;
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      font-size: 13px;
+    }
+    footer a { color: white; }
+    @media (max-width: 700px) {
+      header { align-items: flex-start; flex-direction: column; }
+      nav { gap: 14px; }
+      .hero, .about { grid-template-columns: 1fr; }
+      .hero { padding-top: 45px; }
+      .hero-art { min-height: 180px; font-size: 75px; }
+      .categories { grid-template-columns: 1fr; }
+      section { padding: 40px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">YOUR NEXT ADVENTURE STARTS HERE</div>
+  <header>
+    <a class="brand" href="#">MARK TRAVEL MATRIX</a>
+    <nav>
+      <a href="#categories">Explore Gear</a>
+      <a href="#featured">Product Guides</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Travel smarter. Explore more.</div>
+        <h1>Find the gear for your next journey.</h1>
+        <p>Discover useful travel essentials, explore product options, and find gear that fits your next adventure.</p>
+        <a class="button" href="#categories">Explore Travel Gear →</a>
+      </div>
+      <div class="hero-art" aria-label="Travel suitcase illustration" role="img">🧳</div>
+    </section>
+
+    <section id="categories">
+      <div class="section-head">
+        <h2>Explore Travel Essentials</h2>
+        <p>Start with the gear that makes every trip easier.</p>
+      </div>
+      <div class="categories">
+        <a class="category" href="#featured">
+          <div class="emoji">🧳</div>
+          <h3>Luggage & Carry-ons</h3>
+          <p>Explore suitcase styles and bags for your trip.</p>
+        </a>
+        <a class="category" href="#featured">
+          <div class="emoji">🎒</div>
+          <h3>Backpacks & Daypacks</h3>
+          <p>Find bags for sightseeing and everyday travel.</p>
+        </a>
+        <a class="category" href="#featured">
+          <div class="emoji">🧩</div>
+          <h3>Packing Accessories</h3>
+          <p>Discover organizers and handy travel essentials.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="featured" id="featured">
+      <div class="section-head">
+        <h2>Travel Gear Guides</h2>
+        <p>Helpful comparisons to make choosing your gear easier.</p>
+      </div>
+      <div class="notice">
+        <strong>Product guides are coming soon.</strong>
+        <p>We're preparing product comparisons with retailer links, current prices where available, and clear details to help you compare your options.</p>
+        We may earn a commission from qualifying purchases made through affiliate links, at no extra cost to you.
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div>
+        <div class="eyebrow">About Mark Travel Matrix</div>
+        <h2>Better planning. Better adventures.</h2>
+      </div>
+      <p>Our goal is to make travel gear easier to explore. We'll bring together useful guides and product comparisons so you can research your options before visiting a retailer.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Mark Travel Matrix. All rights reserved.</p>
+    <p>Product availability and prices can change. Always confirm details with the retailer.</p>
+    <p><a href="mailto:contact@example.com">Contact</a> · Affiliate links will be identified clearly.</p>
+  </footer>
+</body>
+</html>
